@@ -8,6 +8,8 @@ from flask.ext.wtf import CSRFProtect
 from redis import StrictRedis
 from config import zd
 
+
+
 def cread_info(ms='ts'):
     app = Flask(__name__)
     app.config.from_object(zd[ms])
